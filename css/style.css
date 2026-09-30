@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    /* màu */
+    --color-bg: #FDF8F1;
+    --color-text-muted: #6B615A;
+    --color-border: #E5DACA;
+    --color-text: #2A2420;
+    --color-surface: #FFFFFF;
+    /* chữ */
+    --font-display: "Lora", Georgia, serif;
+    --font-sans: "Be Vietnam Pro", system-ui, sans-serif;
+    /* bóng — 2 mức */
+    --shadow-sm: 0 1px 2px rgb(42 36 32 / .06);
+    --shadow-md: 0 4px 12px rgb(42 36 32 / .12);
+    /* bo góc */
+    --radius-sm: 6px;   --radius-md: 12px;
+    --radius-full: 999px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    font-family: var(--font-display);
+    border-bottom: 1px solid var(--color-border);
+}
+header h1{
+    font-size: 1.5rem;
+    color: #A8432A;
+}
+header button{
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-surface) ;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 1rem;
+    gap: 1rem;
+    background-color: var(--color-bg);
+}
+section h2{
+    font-size: 1.6rem;
+    font-family: var(--font-display);
+    color: var(--color-text);
+}
+section p{
+    font-family: var(--font-sans);
+    color: var(--color-text-muted);
+}
+article{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+article:hover{
+    box-shadow: var(--shadow-md);
+}
+.food{
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+.food-card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.name-tag{
+    display: flex;
+    gap: 0.5rem;
+}
+.food-name{
+    background-color: var(--color-bg);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    align-self: flex-start;
+    color: var(--color-text-muted);
+    padding: 0.3rem 0.7rem;
+}
+.food-card h3{
+    font-family: var(--font-display);
+}
+.food-ingredient{
+    height: 3rem;
+    font-family: var(--font-sans);
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--color-border);
+}
+.recipe-info{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    gap: 0.7rem;
+    padding: 0;
+}
+li {
+    color: var(--color-text-muted);
+    gap: 0.3rem;
+}
+.icon{
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-text);
+    padding: 1.5rem 0.75rem;
+    gap: 0.5rem;
+}
+footer h3{
+    font-family: var(--font-display);
+    color: var(--color-surface);
+    margin-bottom: 0.3rem;
+}
+footer p{
+    font-family: var(--font-sans);
+    color: #B7B19A;
+    font-size: 0.8rem;
+}
