@@ -19,17 +19,24 @@
 <body>
     <header>
         <h1>Bếp Nhà</h1>
-        <button>☰</button>
+        <div class="header-left">
+            <button>☰</button>
+            <div class="nav">
+                <span class="home-page">Trang chủ</span>
+                <span class="sign-in">Đăng nhập</span>
+                <span class="post">Đăng công thức</span>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="title-main">
             <h2>Công thức nấu ăn của người nhà mình</h2>
         </section>
-        <section>
-            <p>Món quen, cách làm rõ ràng, ai cũng nấu được.</p>
+        <section class="title-extra">
+            <span>Món quen, cách làm rõ ràng, ai cũng nấu được.</span><span class="p-desktop"> Chia sẻ công thức của bạn để cả nhà cùng nấu.</span>
         </section>
-        <article class="recipe-card">
-            <img src="img/pho-bo.jpg" alt="hình ảnh một bát phở bò" class="food">
+        <div class="recipe-card">
+            <img src="img/pho-bo.jpg" alt="hình ảnh một bát phở bò" class="food-img">
             <div class="food-card">
                 <p class="food-name">Món Việt</p>
                 <h3>Phở bò Hà Nội</h3>
@@ -46,9 +53,9 @@
                     <li style="color: green; font-weight: bold;">Trung bình</li>
                 </ul>
             </div>
-        </article>
-        <article class="recipe-card">
-            <img src="img/banh-xeo.jpg" alt="hình ảnh món bánh xèo miền Tây" class="food">
+        </div>
+        <div class="recipe-card">
+            <img src="img/banh-xeo.jpg" alt="hình ảnh món bánh xèo miền Tây" class="food-img">
             <div class="food-card">
                 <div class="name-tag">
                     <p class="food-name">Món Việt</p>
@@ -68,12 +75,100 @@
                     <li style="color: green; font-weight: bold;">Dễ</li>
                 </ul>
             </div>
-        </article>
+        </div>
+        <div class="recipe-card">
+            <img src="img/dau-hu-sot-ca-chua.jpg" alt="hình ảnh món đậu hũ xốt cà chua" class="food-img">
+            <div class="food-card">
+                <div class="name-tag">
+                    <p class="food-name">Món chay</p>
+                    <p class="food-name">Món nhanh</p>
+                </div>
+                <h3>Đậu hũ sốt cà chua</h3>
+                <p class="food-ingredient">Món chay quen, cơm nóng là hết nồi.</p>
+                <ul class="recipe-info">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="icon">
+                            <path
+                                d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z" />
+                        </svg>
+                        10 + 15 phút
+                    </li>
+                    <li>2 người</li>
+                    <li style="color: green; font-weight: bold;">Dễ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="img/canh-chua-ca-loc.jpg" alt="hình ảnh món canh chua cá lóc" class="food-img">
+            <div class="food-card">
+                <p class="food-name">Món Việt</p>
+                <h3>Canh chua cá lóc</h3>
+                <p class="food-ingredient">Chua dịu me chín, thơm ngò om và bạc hà.</p>
+                <ul class="recipe-info">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="icon">
+                            <path
+                                d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z" />
+                        </svg>
+                        15 + 25 phút
+                    </li>
+                    <li>4 người</li>
+                    <li style="color: green; font-weight: bold;">Dễ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="img/goi-quan.jpg" alt="hình ảnh món gỏi quấn tôm thịt" class="food-img">
+            <div class="food-card">
+                <div class="name-tag">
+                    <p class="food-name">Món Việt</p>
+                    <p class="food-name">Món nhanh</p>
+                </div>
+                <h3>Gỏi cuốn tôm thịt</h3>
+                <p class="food-ingredient">Bánh tráng mềm, rau thơm mát, chấm tương đậm.</p>
+                <ul class="recipe-info">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="icon">
+                            <path
+                                d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z" />
+                        </svg>
+                        25 + 10 phút
+                    </li>
+                    <li>4 người</li>
+                    <li style="color: green; font-weight: bold;">Dễ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="img/bun-cha.jpg" alt="hình ảnh món bún chả chấm" class="food-img">
+            <div class="food-card">
+                <p class="food-name">Món Việt</p>
+                <h3>Bún chả</h3>
+                <p class="food-ingredient">Chả nướng than hoa, nước chấm pha loãng vừa miệng.</p>
+                <ul class="recipe-info">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="icon">
+                            <path
+                                d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z" />
+                        </svg>
+                        30 + 25 phút
+                    </li>
+                    <li>4 người</li>
+                    <li style="color: green; font-weight: bold;">Trung bình</li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer>
-        <h3>Bếp Nhà</h3>
-        <p>Công thức nấu ăn gia đình Việt.</p>
-        <p>&copy; 2026 Bếp Nhà</p>
+        <div class="f-left">
+            <h3 class="f1">Bếp Nhà</h3>
+            <p class="f2">Công thức nấu ăn gia đình Việt.</p>
+        </div>
+        <div class="f-right">
+            <span class="p-desktop">Trang chủ</span>
+            <span class="p-desktop">Đăng công thức</span>
+            <span class="f3">&copy; 2026 <span class="p-non-desktop">Bếp Nhà</span></span>
+        </div>
     </footer>
 </body>
 </html>
