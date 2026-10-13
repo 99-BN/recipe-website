@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style-post.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +40,7 @@
             <form action="">
                 <div class="form-field">
                     <label for="fname">Tên món</label>
-                    <input type="text" id="fname" name="fname" placeholder="Bánh xèo miền Tây">
+                    <input type="text" id="fname" name="fname" placeholder="Bánh xèo miền Tây" class="general_form-field">
                 </div>
                 <div class="form-field">
                     <h3>Ảnh đại diện</h3>
@@ -51,28 +52,28 @@
                             <span><span class="descri-mobile">Chọn một ảnh </span>JPG hoặc PNG, tối đa 2 MB.<span class="descri-desktop"> Ảnh sẽ được cắt theo khung 4:3 trên card.</span></span>
                             <div class="button-img">
                                 <label for="choose-img">Chọn ảnh</label>
-                                <input type="file" id="choose-img" name="choose-img" hidden>
-                                <button class="delete">Xoá ảnh</button>
+                                <input type="file" id="choose-img" name="choose-img" class="general_form-field" hidden> 
+                                <button class="btn-delete">Xoá ảnh</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-field">
                     <label for="describe">Mô tả ngắn</label>
-                    <textarea id="describe" name="describe" rows="5" placeholder="Vỏ bánh mỏng vàng ruộm nhờ nước cốt dừa và bột nghệ tươi."></textarea>
+                    <textarea id="describe" name="describe" class="general_form-field" rows="5" placeholder="Vỏ bánh mỏng vàng ruộm nhờ nước cốt dừa và bột nghệ tươi."></textarea>
                 </div>
                 <div class="form-rows">
                     <div class="form-row">
                         <label for="pre-time"><span>Thời gian </span>chuẩn bị (phút)</label>
-                        <input type="number" id="pre-time name="pre-time" min="1" max="2000">
+                        <input type="number" id="pre-time" name="pre-time" min="1" max="2000">
                     </div>
                     <div class="form-row">
-                        <label for="cook-time>Nấu(phút)"><span>Thời gian </span>nấu (phút)</label>
+                        <label for="cook-time"><span>Thời gian </span>nấu (phút)</label>
                         <input type="number" id="cook-time" name="cook-time" min="1" max="10000">
                     </div>
                     <div class="form-row">
                         <label for="ration">Khẩu phần<span> (người)</span></label>
-                        <input type="number" id="ration name="ration" min="1" max="20">
+                        <input type="number" id="ration" name="ration" min="1" max="20">
                     </div>
                     <div class="form-row">
                         <label for="levels">Độ khó</label>
@@ -151,8 +152,8 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <button class="post">Đăng công thức</button>
-                    <button class="cancel">Huỷ</button>
+                    <button class="btn-submit">Đăng công thức</button>
+                    <button class="btn-cancel">Huỷ</button>
                     <span>Công thức sẽ ở trạng thái <span class="text-style">Chờ duyệt</span> cho tới khi admin duyệt.</span>
                 </div>
             </form>
