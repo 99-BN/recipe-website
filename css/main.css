@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root {
+    /* màu */
+    --color-primary: #A8432A;
+    --color-primary-dark: #7E2F1C;
+    --color-primary-soft: #FBEFEA;
+    --color-accent: #2F6B45;
+    --color-accent-soft: #E8F1E9;
+    --color-bg: #FDF8F1;
+    --color-surface: #FFFFFF;
+    --color-neutral-100: #F3EDE4;
+    --color-border: #E5DACA;
+    --color-neutral-400: #A89C8F;
+    --color-text-muted: #6B615A;
+    --color-text: #2A2420;
+    --color-success: #1F6B41;
+    --color-success-soft: #E8F1E9;
+    --color-warning: #8A5A00;
+    --color-warning-soft: #FBF0DB;
+    --color-danger: #B3261E;
+    --color-danger-soft: #FBE9E7;
+    /* chữ */
+    --font-display: "Lora", Georgia, serif;
+    --font-sans: "Be Vietnam Pro", system-ui, sans-serif;
+    /* bóng — 2 mức */
+    --shadow-sm: 0 1px 2px rgb(42 36 32 / .06);
+    --shadow-md: 0 4px 12px rgb(42 36 32 / .12);
+    /* bo góc */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-full: 999px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    font-family: var(--font-display);
+    border-bottom: 1px solid var(--color-border);
+}
+header h1 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+.header-left button {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+.nav {
+    display: none;
+}
+.nav span {
+    cursor: pointer;
+}
+main{
+    background-color: var(--color-bg);
+}
+/* page-post */
+.general_form-field{
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    padding: 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    margin-top: 0.5rem;
+}

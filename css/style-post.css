@@ -1,58 +1,4 @@
-*{
-    margin: 0px;
-    box-sizing: border-box;
-}
-:root{
-    /* màu */
-    --color-primary: #A8432A;
-    --color-primary-soft: #FBEFEA;
-    --color-bg: #FDF8F1;
-    --color-text-muted: #6B615A;
-    --color-border: #E5DACA;
-    --color-text: #2A2420;
-    --color-surface: #FFFFFF;
-    --color-accent: #2F6B45;
-    --color-accent-soft: #E8F1E9;
-    --color-neutral-100: #F3EDE4;
-    --color-warning: #8A5A00;
-    /* chữ */
-    --font-display: "Lora", Georgia, serif;
-    --font-sans: "Be Vietnam Pro", system-ui, sans-serif;
-    /* bóng — 2 mức */
-    --shadow-sm: 0 1px 2px rgb(42 36 32 / .06);
-    --shadow-md: 0 4px 12px rgb(42 36 32 / .12);
-    /* bo góc */
-    --radius-sm: 6px;
-    --radius-md: 12px;
-    --radius-full: 999px;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem 1rem;
-    font-family: var(--font-display);
-    border-bottom: 1px solid var(--color-border);
-}
-header h1{
-    font-size: 1.5rem;
-    color: var(--color-primary);
-}
-.header-left button{
-    padding: 0.3rem 0.5rem;
-    border: 1px solid var(--color-border);
-    background-color: var(--color-surface);
-    border-radius: var(--radius-sm);
-    cursor: pointer;
-}
-.nav{
-    display: none;
-}
-.nav span{
-    cursor: pointer;
-}
 main{
-    background-color: var(--color-bg);
     padding: 1rem;
 }
 main h2{
@@ -69,19 +15,6 @@ main h2{
     font-family: var(--font-sans);
     font-size: 1rem;
     font-weight: 500;
-}
-.form-field textarea{
-    font-family: var(--font-sans);
-    font-size: 1rem;
-    padding: 0.75rem;
-}
-.form-field input,textarea{
-    font-family: var(--font-sans);
-    font-size: 1rem;
-    padding: 0.75rem;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    margin-top: 0.5rem;
 }
 .border-img{
     background-color: var(--color-surface);
@@ -125,7 +58,8 @@ main h2{
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
-.delete{
+.btn-   delete{
+    display: none;
     font-size: 1rem;
     font-weight: bold;
     border: 1px solid var(--color-border);
@@ -271,6 +205,9 @@ main h2{
 }
 .steps-list textarea{
     flex: 1;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     padding: 0.75rem;
 }
@@ -293,7 +230,7 @@ main h2{
     flex-direction: column;
     gap: 0.5rem;
 }
-.post{
+.btn-submit{
     font-family: var(--font-sans);
     font-weight: bold;
     font-size: 1rem;
@@ -304,7 +241,7 @@ main h2{
     padding: 0.75rem 0;
     cursor: pointer;
 }
-.cancel{
+.btn-cancel{
     font-family: var(--font-sans);
     font-weight: bold;
     font-size: 1rem;
@@ -370,6 +307,9 @@ main h2{
         grid-template-columns: auto 1fr;
         gap: 1rem;
     }
+    .btn-delete{
+        display: block;
+    }
     .preview-desktop{
         display: flex;
         justify-content: center;
@@ -422,10 +362,10 @@ main h2{
         justify-content: flex-start;
         align-items: center;
     }
-    .post{
+    .btn-submit{
         padding: 0.75rem 1.5rem;
     }
-    .cancel{
+    .btn-cancel{
         padding: 0.75rem 1.5rem;
     }
     .buttons span{
