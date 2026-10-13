@@ -66,7 +66,7 @@ section{
 }
 .icon-time{
     display: flex;
-    gap: 0.25rem;
+    gap: 0.2rem;
 }
 .icon{
     display: none;
@@ -143,7 +143,6 @@ section{
 .steps h2{
     font-family: var(--font-display);
     color: var(--color-text);
-    margin: -0.25rem 0 0.8rem 0;
 }
 .steps-list{
     list-style: none;
@@ -177,9 +176,13 @@ section{
     background-color: var(--color-primary);
     color: var(--color-surface);
 }
+.comments{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .comments h2{
     font-family: var(--font-display);
-    margin: -0.5rem 0 1rem 0;
 }
 .comments ul{
     display: flex;
@@ -220,21 +223,21 @@ section{
     font-size: 0.9rem;
     line-height: 1.5;
 }
-.footer-sign-up{
+.comments .footer-sign-up{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    background-color: var(--color-primary-soft);
+    gap: 1rem;
+    background-color: var(--color-neutral-100);
 }
 .footer-sign-up button{
-    max-width: 115px;
+    align-self: flex-start;
     font-family: var(--font-sans);
     color: var(--color-surface);
     font-weight: bold;
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
     border-radius: var(--radius-sm);
-    padding: 0.5rem;
+    padding: 0.6rem 1rem;
 }
 @media screen and (min-width: 768px){
     header{
@@ -319,7 +322,6 @@ section{
         gap: 1rem;
     }
     .ingredient{
-        align-self: self-start;
         background-color: var(--color-surface);
         border: 1px solid var(--color-border);
         border-radius: var(--radius-sm);
@@ -390,9 +392,6 @@ section{
     }
     main{
         padding: 2.5rem 5rem;
-    }
-    section{
-        padding: 0;
     }
     .on-desktop-img_info{
         display: flex;
@@ -470,7 +469,7 @@ section{
         display: block;
     }
     .comments{
-        display: block;
+        display: flex;
     }
     .on-desktop-ing_ste_com{
         display: grid;

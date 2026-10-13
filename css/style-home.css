@@ -56,8 +56,6 @@ main{
     padding: 0.3rem 0.7rem;
 }
 .food-card h3{
-    display: -webkit-box;
-    max-width: 80%;
     font-family: var(--font-display);
 }
 .food-ingredient{
@@ -80,12 +78,15 @@ main{
 }
 li {
     color: var(--color-text-muted);
-    gap: 0.3rem;
+}
+.icon-time {
+    display: flex;
+    gap: 0.2rem;
 }
 .icon{
+    align-self: center;
     width: 1em;
     height: 1em;
-    vertical-align: middle;
 }
 footer{
     display: flex;
@@ -136,9 +137,9 @@ footer .f2,.f3{
     }
     main{
         display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-areas: 
-        'header header'
-        'card card';
+        'header header';
         padding: 1.5rem 1.2rem;
     }
     .title-main{
@@ -162,14 +163,14 @@ footer .f2,.f3{
 }
 @media screen and (min-width: 1280px){
     header {
-            padding: 1.2rem 2.5rem;
-        }
+        padding: 1.2rem 2.5rem;
+    }
     main{
         display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-template-areas:
             'header header header'
-            'title title title'
-            'card card card';
+            'title title title';
         padding: 2.5rem 4.5rem;
     }
     section{
@@ -184,6 +185,7 @@ footer .f2,.f3{
     }
     .p-desktop {
         display: inline;
+        color: #B7B19A;
     }
     footer{
         display: flex;
@@ -195,9 +197,6 @@ footer .f2,.f3{
         display: flex;
         gap: 2rem;
     }
-    .f-right .p-desktop{
-        color: #B7B19A;
-    }
     .f-right .p-non-desktop{
         display: none;
     }
@@ -206,5 +205,9 @@ footer .f2,.f3{
     }
     footer .f3{
         color: var(--color-text-muted);
+    }
+    .f-desktop{
+        cursor: pointer;
+        color: #B7B19A;
     }
 }
