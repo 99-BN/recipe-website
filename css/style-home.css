@@ -1,53 +1,8 @@
-*{
-    margin: 0px;
-    box-sizing: border-box;
-}
-:root{
-    /* màu */
-    --color-primary: #A8432A;
-    --color-bg: #FDF8F1;
-    --color-text-muted: #6B615A;
-    --color-border: #E5DACA;
-    --color-text: #2A2420;
-    --color-surface: #FFFFFF;
-    /* chữ */
-    --font-display: "Lora", Georgia, serif;
-    --font-sans: "Be Vietnam Pro", system-ui, sans-serif;
-    /* bóng — 2 mức */
-    --shadow-sm: 0 1px 2px rgb(42 36 32 / .06);
-    --shadow-md: 0 4px 20px rgb(42 36 32 / .12);
-    /* bo góc */
-    --radius-sm: 6px;   --radius-md: 12px;
-    --radius-full: 999px;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem 1rem;
-    font-family: var(--font-display);
-    border-bottom: 1px solid var(--color-border);
-}
-header h1{
-    font-size: 1.5rem;
-    color: var(--color-primary);
-}
-.header-left button{
-    padding: 0.3rem 0.5rem;
-    border: 1px solid var(--color-border);
-    background-color: var(--color-surface) ;
-    border-radius: var(--radius-sm);
-    cursor: pointer;
-}
-.nav{
-    display: none;
-}
 main{
     display: flex;
     flex-direction: column;
     padding: 1.2rem 1rem;
     gap: 1rem;
-    background-color: var(--color-bg);
 }
 .title-main h2{
     font-size: 1.6rem;
