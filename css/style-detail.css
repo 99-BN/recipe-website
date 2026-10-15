@@ -391,7 +391,7 @@ section{
         border-radius: var(--radius-full);
     }
     main{
-        padding: 2.5rem 5rem;
+        padding: 2.5rem max(4.5rem, calc((100% - 1280px) / 2 + 4.5rem));
     }
     .on-desktop-img_info{
         display: flex;
@@ -481,6 +481,7 @@ section{
     }
     .ingredient{
         grid-row: span 2;
+        align-self: flex-start;
     }
     .ingre-rows-desktop{
         display: flex;
