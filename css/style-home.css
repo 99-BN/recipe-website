@@ -21,6 +21,7 @@ main{
     flex-direction: column;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
+    cursor: pointer;
 }
 .recipe-card:hover{
     box-shadow: var(--shadow-md);
@@ -124,9 +125,6 @@ footer .f-desktop{
     .nav .home-page{
         font-weight: bold;
         color: var(--color-primary);
-        cursor: pointer;
-    }
-    .nav .sign-in{
         cursor: pointer;
     }
     .nav .post{
