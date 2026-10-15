@@ -35,128 +35,126 @@
         </div>
     </header>
     <main>
-        <div class="main-content">
-            <h2>Đăng công thức mới</h2>
-            <form action="">
-                <div class="form-field">
-                    <label for="fname">Tên món</label>
-                    <input type="text" id="fname" name="fname" placeholder="Bánh xèo miền Tây" class="general_form-field">
-                </div>
-                <div class="form-field">
-                    <h3>Ảnh đại diện</h3>
-                    <div class="border-img">
-                        <div class="preview-desktop">
-                            <span>preview 4:3</span>
-                        </div>
-                        <div class="describe-button">
-                            <span><span class="descri-mobile">Chọn một ảnh </span>JPG hoặc PNG, tối đa 2 MB.<span class="descri-desktop"> Ảnh sẽ được cắt theo khung 4:3 trên card.</span></span>
-                            <div class="button-img">
-                                <label for="choose-img">Chọn ảnh</label>
-                                <input type="file" id="choose-img" name="choose-img" class="general_form-field" hidden> 
-                                <button class="btn-delete">Xoá ảnh</button>
-                            </div>
+        <h2>Đăng công thức mới</h2>
+        <form action="">
+            <div class="form-field">
+                <label for="fname">Tên món</label>
+                <input type="text" id="fname" name="fname" placeholder="Bánh xèo miền Tây" class="general_form-field">
+            </div>
+            <div class="form-field">
+                <h3>Ảnh đại diện</h3>
+                <div class="border-img">
+                    <div class="preview-desktop">
+                        <span>preview 4:3</span>
+                    </div>
+                    <div class="describe-button">
+                        <span><span class="descri-mobile">Chọn một ảnh </span>JPG hoặc PNG, tối đa 2 MB.<span class="descri-desktop"> Ảnh sẽ được cắt theo khung 4:3 trên card.</span></span>
+                        <div class="button-img">
+                            <label for="choose-img">Chọn ảnh</label>
+                            <input type="file" id="choose-img" name="choose-img" class="general_form-field" hidden> 
+                            <button class="btn-delete">Xoá ảnh</button>
                         </div>
                     </div>
                 </div>
-                <div class="form-field">
-                    <label for="describe">Mô tả ngắn</label>
-                    <textarea id="describe" name="describe" class="general_form-field" rows="5" placeholder="Vỏ bánh mỏng vàng ruộm nhờ nước cốt dừa và bột nghệ tươi."></textarea>
+            </div>
+            <div class="form-field">
+                <label for="describe">Mô tả ngắn</label>
+                <textarea id="describe" name="describe" class="general_form-field" rows="5" placeholder="Vỏ bánh mỏng vàng ruộm nhờ nước cốt dừa và bột nghệ tươi."></textarea>
+            </div>
+            <div class="form-rows">
+                <div class="form-row">
+                    <label for="pre-time"><span>Thời gian </span>chuẩn bị (phút)</label>
+                    <input type="number" id="pre-time" name="pre-time" min="1" max="2000">
                 </div>
-                <div class="form-rows">
-                    <div class="form-row">
-                        <label for="pre-time"><span>Thời gian </span>chuẩn bị (phút)</label>
-                        <input type="number" id="pre-time" name="pre-time" min="1" max="2000">
-                    </div>
-                    <div class="form-row">
-                        <label for="cook-time"><span>Thời gian </span>nấu (phút)</label>
-                        <input type="number" id="cook-time" name="cook-time" min="1" max="10000">
-                    </div>
-                    <div class="form-row">
-                        <label for="ration">Khẩu phần<span> (người)</span></label>
-                        <input type="number" id="ration" name="ration" min="1" max="20">
-                    </div>
-                    <div class="form-row">
-                        <label for="levels">Độ khó</label>
-                        <select id="levels" name="levels">
-                            <option value="easy">Dễ</option>
-                            <option value="medium">Trung bình</option>
-                            <option value="hard">Khó</option>
-                        </select>
-                    </div>
+                <div class="form-row">
+                    <label for="cook-time"><span>Thời gian </span>nấu (phút)</label>
+                    <input type="number" id="cook-time" name="cook-time" min="1" max="10000">
                 </div>
-                <fieldset class="category">
-                    <legend>Danh mục</legend>
-                    <div class="cate-list">
-                        <div>
-                            <input type="checkbox" id="option1" name="category" value="mon-viet">
-                            <label for="option1">Món Việt</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="option2" name="category" value="mon-chay">
-                            <label for="option2">Món chay</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="option3" name="category" value="mon-nhanh">
-                            <label for="option3">Món nhanh</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="option4" name="category" value="do-uong">
-                            <label for="option4">Đồ uống</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="option5" name="category" value="trang-mieng">
-                            <label for="option5">Tráng miệng</label>
-                        </div>
+                <div class="form-row">
+                    <label for="ration">Khẩu phần<span> (người)</span></label>
+                    <input type="number" id="ration" name="ration" min="1" max="20">
+                </div>
+                <div class="form-row">
+                    <label for="levels">Độ khó</label>
+                    <select id="levels" name="levels">
+                        <option value="easy">Dễ</option>
+                        <option value="medium">Trung bình</option>
+                        <option value="hard">Khó</option>
+                    </select>
+                </div>
+            </div>
+            <fieldset class="category">
+                <legend>Danh mục</legend>
+                <div class="cate-list">
+                    <div>
+                        <input type="checkbox" id="option1" name="category" value="mon-viet">
+                        <label for="option1">Món Việt</label>
                     </div>
-                </fieldset>
-                <fieldset class="ingredient">
-                    <legend>Nguyên liệu</legend>
-                    <div class="ingredient-rows">
-                        <div class="ingredient-head">
-                            <p class="hint-top">Tên nguyên liệu</p>
-                            <p class="hint-top">Số lượng</p>
-                            <p class="hint-top">Đơn vị</p>
-                        </div>
-                        <div class="ingredient-row">
-                            <input type="text" name="ingre-name1" aria-label="Tên nguyên liệu" placeholder="Bột gạo">
-                            <input type="number" name="ingre-quantity1" aria-label="Số lượng" placeholder="300">
-                            <input type="text" name="ingre-unit1" aria-label="Đơn vị" placeholder="g">
-                        </div>
-                        <div class="ingredient-row">
-                            <input type="text" name="ingre-name2" aria-label="Tên nguyên liệu">
-                            <input type="number" name="ingre-quantity2" aria-label="Số lượng">
-                            <input type="text" name="ingre-unit2" aria-label="Đơn vị">
-                        </div>
-                        <div class="ingredient-row">
-                            <input type="text" name="ingre-name3" aria-label="Tên nguyên liệu">
-                            <input type="number" name="ingre-quantity3" aria-label="Số lượng">
-                            <input type="text" name="ingre-unit3" aria-label="Đơn vị">
-                        </div>
-                        <p class="hint-bottom">Tên &middot; số lượng &middot; đơn vị</p>
+                    <div>
+                        <input type="checkbox" id="option2" name="category" value="mon-chay">
+                        <label for="option2">Món chay</label>
                     </div>
-                </fieldset>
-                <div class="steps">
-                    <h3>Các bước làm</h3>
-                    <div class="steps-list">
-                        <ol>
-                            <li>
-                                <textarea name="steps1" aria-label="Bước 1" rows="3" placeholder="Hoà bột với nước cốt dừa, để bột nghỉ 20 phút."></textarea>
-                            </li>
-                            <li>
-                                <textarea name="steps2" aria-label="Bước 2" rows="3"></textarea>
-                            </li>
-                            <li>
-                                <textarea name="steps3" aria-label="Bước 3" rows="3"></textarea>
-                            </li>
-                        </ol>
+                    <div>
+                        <input type="checkbox" id="option3" name="category" value="mon-nhanh">
+                        <label for="option3">Món nhanh</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="option4" name="category" value="do-uong">
+                        <label for="option4">Đồ uống</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="option5" name="category" value="trang-mieng">
+                        <label for="option5">Tráng miệng</label>
                     </div>
                 </div>
-                <div class="buttons">
-                    <button class="btn-submit">Đăng công thức</button>
-                    <button class="btn-cancel">Huỷ</button>
-                    <span>Công thức sẽ ở trạng thái <span class="text-style">Chờ duyệt</span> cho tới khi admin duyệt.</span>
+            </fieldset>
+            <fieldset class="ingredient">
+                <legend>Nguyên liệu</legend>
+                <div class="ingredient-rows">
+                    <div class="ingredient-head">
+                        <p class="hint-top">Tên nguyên liệu</p>
+                        <p class="hint-top">Số lượng</p>
+                        <p class="hint-top">Đơn vị</p>
+                    </div>
+                    <div class="ingredient-row">
+                        <input type="text" name="ingre-name1" aria-label="Tên nguyên liệu" placeholder="Bột gạo">
+                        <input type="number" name="ingre-quantity1" aria-label="Số lượng" placeholder="300">
+                        <input type="text" name="ingre-unit1" aria-label="Đơn vị" placeholder="g">
+                    </div>
+                    <div class="ingredient-row">
+                        <input type="text" name="ingre-name2" aria-label="Tên nguyên liệu">
+                        <input type="number" name="ingre-quantity2" aria-label="Số lượng">
+                        <input type="text" name="ingre-unit2" aria-label="Đơn vị">
+                    </div>
+                    <div class="ingredient-row">
+                        <input type="text" name="ingre-name3" aria-label="Tên nguyên liệu">
+                        <input type="number" name="ingre-quantity3" aria-label="Số lượng">
+                        <input type="text" name="ingre-unit3" aria-label="Đơn vị">
+                    </div>
+                    <p class="hint-bottom">Tên &middot; số lượng &middot; đơn vị</p>
                 </div>
-            </form>
-        </div>
+            </fieldset>
+            <div class="steps">
+                <h3>Các bước làm</h3>
+                <div class="steps-list">
+                    <ol>
+                        <li>
+                            <textarea name="steps1" aria-label="Bước 1" rows="3" placeholder="Hoà bột với nước cốt dừa, để bột nghỉ 20 phút."></textarea>
+                        </li>
+                        <li>
+                            <textarea name="steps2" aria-label="Bước 2" rows="3"></textarea>
+                        </li>
+                        <li>
+                            <textarea name="steps3" aria-label="Bước 3" rows="3"></textarea>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn-submit">Đăng công thức</button>
+                <button class="btn-cancel">Huỷ</button>
+                <span>Công thức sẽ ở trạng thái <span class="text-style">Chờ duyệt</span> cho tới khi admin duyệt.</span>
+            </div>
+        </form>
     </main>
 </body>
